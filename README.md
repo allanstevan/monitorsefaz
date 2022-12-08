@@ -20,3 +20,9 @@ Instalar uma crontab para que o processo seja feito de forma automática de 1 em
 
 
 * * * * *  cd /var/www/html/sefaz/;sh monitor.sh
+
+# Recomendações para monitoramento
+
+A pasta do script deve ser uma pasta acessivel pelo servidor web para que seja acessada externamente, por exemplo, /var/www/html no caso do apache. O script pode ser mudado à gosto para que fique em outra pasta e mande os outputs (estado.htm, por exemplo SC.htm, SP.htm, etc) para a pasta "publicável" pelo webserver.
+
+No sistema de monitoramento deve ser configurado para verificar a string OK ou ERRO no arquivo htm relacionado. Ex: http://servidordomonitor.com.br/monitorsefaz/RS.htm
