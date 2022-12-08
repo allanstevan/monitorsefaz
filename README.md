@@ -16,4 +16,7 @@ Para as comparações são usados arquivos temporários no mesmo diretório do s
 
 Posicionar o script em uma pasta que o mesmo tenha direitos de leitura para que o mesmo possa criar e remover os arquivos temporários.
 O servidor precisa ter acesso liberado ao site da receita (nfe.fazenda.gov.br).
-Instalar uma crontab para qui
+Instalar uma crontab para que o processo seja feito de forma automática de 1 em 1 minuto (ou de acordo com a necessidade, basta editar a entrada do crontab):
+
+
+* * * * *  cd /var/www/html/sefaz/;sh monitor.sh
