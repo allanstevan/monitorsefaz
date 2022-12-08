@@ -1,4 +1,4 @@
-# monitorsefaz
+# Descrição
 Monitor SEFAZ
 
 O script basicamente faz o retrieve da página de status da Receita, filtra a tabela com as "bolas" de status, conta as "bolas" verdes por estado (que é o status OK).
